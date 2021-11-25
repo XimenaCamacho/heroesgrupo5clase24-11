@@ -30,30 +30,59 @@
         <section>
             <h1>Añadí tu super!</h1>
             <p>Agregá tu personaje favorito completando las opciones.</p>
-            <form action="superheroe" method="POST">
+            <form action="/superheroe.js" method="POST">
                 <div>
-                    <label for="superheroe">*Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                    <div>
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <!-- id="" siempre debe coincidir con for="" de label -->
+                    </div>
+                    <div>
+                        <label for="especie">*Especie</label>
+                        <select name="especie" id="especie" required>
+                            <option value="0" selected>Especie</option>
+                            <!-- selected sirve para que se posicione en el cuadro de seleccion lo que nosotros queremos que diga -->
+                            <option value="1">Unknown</option>
+                            <option value="2">Extraterrestre</option>
+                            <option value="3">Humano</option>
+                            <option value="4">Dioses</option>
+                            <option value="5">Reptiliano</option>
+                            <option value="6">Iluminati</option>
+                            <option value="7">Super rico</option>
+                        </select>
+                    </div>
                 </div>
                 <div>
-                    <label for="superheroe">*Especie</label>
-                    <select name="especie" id="especie" required>
-                        <option value="0" selected>Unknown</option>
-                        <option value="1">Extraterrestre</option>
-                        <option value="2">Humano</option>
-                        <option value="3">Dioses</option>
-                        <option value="4">Reptiliano</option>
-                        <option value="5">Iluminati</option>
-                        <option value="6">Super rico</option>
-                    </select>
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha">
+                        <!-- value="año-mes-dia" para fijar una fecha en concreto -->
+                        <!-- max="año-mes-dia" y min="año-mes-dia" para fijar tope minimo de fecha y tope maximo -->
+                    </div>
+                    <div>
+                        <label for="imagen">Agregar una foto</label>
+                        <input type="file" name="imagen" id="imagen" accept=".png, .jpg">
+                        <!-- accept="formato" indica los formatos permitidos para subir un archivo/imagen -->
+                    </div>
                 </div>
                 <div>
-                    <label for="superheroe">Fecha</label>
-                    <input type="date" name="fecha" id="fecha">
+                    <label for="descripcion"></label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                        placeholder="Descripción"></textarea>
                 </div>
                 <div>
-                    <label for="superheroe">*Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <div>
+                        <label for="poderes">Poderes</label>
+                        <input type="checkbox" name="poderes" id="poderes" value="Volar">
+                        <input type="checkbox" name="poderes" id="poderes" value="SuperInteligencia">
+                        <input type="checkbox" name="poderes" id="poderes" value="Vista de rayo láser">
+                        <input type="checkbox" name="poderes" id="poderes" value="Billetera gorda">
+                    </div>
+                    <div>
+                        <label for="personaje">Tipo de personaje</label>
+                        <input type="radio" name="personaje" id="personaje" value="Héroe / Heroina">
+                        <input type="radio" name="personaje" id="personaje" value="Villano / Villana">
+                    </div>
                 </div>
             </form>
         </section>
