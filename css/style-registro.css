@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.descuento {
+    background-color: #1CD1B0;
+}
+.descuento p {
+    padding: 5px 0px 10px 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    padding-left: 10px;
+}
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contenedor-datos {
+    width: 30%;
+}
+.contenedor-datos h1 {
+    font-size: 72px;
+    color: #333333;
+}
+.datos {
+    margin: 10px 0;
+}
+.datos input, .datos select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* .button {
+    
+} */
+.pie-de-pagina {
+    background-color: #00669F;
+    color: white;
+    bottom: 0;
+    text-align: center;
+}
+.pie-de-pagina p {
+    bottom: 0;
+    padding: 15px;
+}

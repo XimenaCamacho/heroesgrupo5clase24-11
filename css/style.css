@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.descuento {
+    background-color: #1CD1B0;
+}
+.descuento p {
+    padding: 5px 0px 10px 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    padding-left: 10px;
+}
+.menu {
+    display: flex;
+    background-color: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: right;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+    margin-right: 10px ;
+}
+.menu ul li {
+    margin: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.boton-mas {
+    width: 50px;
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    left: 85%;
+}
+.boton-mas img {
+    position: fixed;
+    width: 80px;
+}
+.primer-contenedor-heroes {
+    display: flex;
+    width:80%;
+    padding: 5%;
+    justify-content: space-around;
+    margin: auto;
+}
+.contenedor-heroes {
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.imagen-fondo img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -10%;
+}
+.corazon {
+    position: absolute;
+    z-index: 5;
+    width: 8%;
+    margin: 5% 0% 0% 8%;
+}
+.imagen-personal img {
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: -35%;
+    margin-left: -25%;
+}
+.descripcion {
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20% 0% 10% 0%;
+}
+.descripcion h3 {
+    margin: 5%;
+    padding-top: 17%;
+}
+.descripcion p {
+    margin: 5% 5% 10%;
+    text-align: initial;
+}
+.descripcion button {
+    background-color: #00669F;
+    border-radius: 3px;
+    width: 50%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.descripcion button a {
+    color: white;
+    text-decoration: none;
+}
+.pie-de-pagina {
+    background-color: #00669F;
+    color: white;
+    bottom: 0;
+    text-align: center;
+}
+.pie-de-pagina p {
+    bottom: 0;
+    padding: 15px;
+}
