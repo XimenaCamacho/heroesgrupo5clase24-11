@@ -6,45 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style-contact.css">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <div class="descuento">
-            <p>20% de descuento en todos los productos!</p>
-        </div>
-        <div class="logo">
-            <a href="./index.html"><img src="./img/logo1.svg" alt="Logo de la tienda"></a>
-            <a href="./index.html"><img src="./img/nombre.svg" alt="Nombre de la tienda"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="register.html">Registrarme</a></li>
-                <li><a href="login.html">Ingresar</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Contacto</h1>
-        <section class="">
-            <div>
-                <input type="text" id="name" name="name" placeholder="Nombre y Apellido">
+    <div class="main-container">
+        <header class="header">
+            <div class="descuento">
+                <p>20% de descuento en todos los productos!</p>
             </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo1.svg" alt="Logo de la tienda"></a>
+                <a href="./index.html"><img src="./img/nombre.svg" alt="Nombre de la tienda"></a>
             </div>
-            <div>
-                <textarea name="contact" id="contact" cols="30" rows="10"></textarea>
-            </div>
-            <button type="reset">Resetear</button>
-            <button type="submit">Enviar</button>
-        </section>
-    </main>
-    <footer class="pie-de-pagina">
-        <p>Todos los derechos reservados a FRONT END 1</p>
-    </footer>
+        </header>
+        <main class="contenedor-principal">
+            <h1>Contacto</h1>
+            <section class="contenedor-formulario">
+                <form action="./contact.js" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Nombre y Apellido">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                    <textarea name="contact" id="contact" cols="30" rows="10"></textarea>
+                    <div class="contenedor-botones">
+                        <button type="reset" class="limpiar">Resetear</button>
+                        <button type="submit" class="enviar">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="pie-de-pagina">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </footer>
+    </div>
 </body>
 
 </html>

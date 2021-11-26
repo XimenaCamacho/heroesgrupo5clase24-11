@@ -7,6 +7,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.main-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+}
 .descuento {
     background-color: #1CD1B0;
 }
@@ -19,39 +28,75 @@ body {
     background-color: #00669F;
     padding-left: 10px;
 }
+/* estilos contenedor main */
 .contenedor-principal {
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    margin: 0px auto;
+}
+.contenedor-principal h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contenedor-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor-formulario input, .contenedor-formulario select {
+    width: 100%;
+    border: 1px solid #000000
+}
+.contenedor-formulario input, .contenedor-formulario select {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.contenedor-formulario select {
+    background-color: white;
+}
+.contenedor-botones, .redireccion-formularios {
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
-.contenedor-datos {
-    width: 30%;
+.limpiar {
+    background-color: #888888;
+    color: white;
 }
-.contenedor-datos h1 {
-    font-size: 72px;
-    color: #333333;
+.enviar {
+    background-color: #1CD1B0;
+    margin-left: 20px;
 }
-.datos {
-    margin: 10px 0;
+.enviar, .limpiar {
+    width: 47%;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
 }
-.datos input, .datos select {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid black;
+.redireccion-formularios {
+    margin-top: 25px;
 }
-/* .button {
-    
-} */
+.redireccion-formularios a {
+    margin-left: 10px;
+    text-decoration: none;
+}
 .pie-de-pagina {
+    width: 100%;
+    align-self: flex-end;
     background-color: #00669F;
     color: white;
-    bottom: 0;
     text-align: center;
 }
 .pie-de-pagina p {
-    bottom: 0;
     padding: 15px;
 }

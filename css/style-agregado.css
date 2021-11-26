@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+.main-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 .descuento {
@@ -37,13 +45,116 @@ body {
     text-decoration: none;
     color: white;
 }
+/* Estilos de formularios */
+.contenedor-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.contenedor-principal {
+    width: 40%;
+    background-color: #00669F;
+    border-radius:50px;
+    text-align: center;
+    color: white;
+}
+.contenedor-principal h1 {
+    font-size: 50px;
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.contenedor-principal p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.contenedor-principal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.contenedor-estilo, .descripcion, .selecciones{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.contenedor-estilo input, .contenedor-estilo select {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 95%;
+    height: 40px;
+    margin-top: 15px;
+}
+.contenedor-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.contenedor-imagen input {
+    margin: auto;
+    width: 100%;
+    margin-top: 25px;
+}
+.descripcion textarea {
+    width: 95%;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+}
+.selecciones-heroes label {
+    display: flex;
+}
+.selecciones-heroes label:first-child {
+    margin-bottom: 10px;
+}
+.selecciones .selecciones-heroes:nth-child(1) {
+    padding-bottom: 10px;
+    border-bottom: #CCCCCC 1px solid;
+}
+.selecciones .selecciones-heroes:nth-child(2) {
+    margin-top: 15px;
+}
+.selecciones-heroes label input {
+    margin: 5px;
+}
+.contenedor-principal form button {
+    width: 50%;
+    padding: 12px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    background-color: #1CD1B0;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
+.contenedor-principal form button:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+/* pie de pagina */
 .pie-de-pagina {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    align-self: flex-end;
     background-color: #00669F;
     color: white;
-    bottom: 0;
     text-align: center;
 }
 .pie-de-pagina p {
-    bottom: 0;
     padding: 15px;
 }

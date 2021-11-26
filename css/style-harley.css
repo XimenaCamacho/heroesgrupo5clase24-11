@@ -6,6 +6,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("../img/bg-harley.jpg");
-    background-size: cover;
+}
+.main-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+}
+.descuento {
+    background-color: #1CD1B0;
+}
+.descuento p {
+    padding: 5px 0px 10px 20px;
+}
+.header h1 {
+    background-color: #00669F;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.contenedor-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg-harley.jpg');
+}
+.contenedor-principal {
+    width: 25%;
+    margin: auto;
+    border-radius: 45px;
+    background-color: white;
+}
+.contenedor-secundario {
+    border-radius: 45px;
+    text-align: center;
+}
+.contenedor-secundario .personaje {
+    border-radius: 50%;
+    margin-top: -15%;
+}
+.descripcion-heroe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion-heroe .corazon {
+    width: 35px;
+    margin-top: -5%;
+    margin-left: -83%;
+}
+.descripcion-heroe h3 {
+    color: #2C0187;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: underline #2C0187 solid 1px;
+    margin: 0px 0px 20px 0px;
+}
+.descripcion-heroe span {
+    color: #2C0187;
+}
+.descripcion-heroe span:nth-child(2) {
+    font-style: italic;
+}
+.descripcion-heroe p {
+    text-align: justify;
+    width: 90%;
+}
+.imagen-armas {
+    margin: -5px 0px;
+}
+.boton-regreso-home {
+    display: flex;
+    justify-content: center;
+}
+.boton-regreso-home a {
+    width: 100%;
+    background-color: #2C0187;
+    padding: 35px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 0px 0px 45px 45px;
+}
+.pie-de-pagina {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    align-self: flex-end;
+    background-color: #00669F;
+    color: white;
+    text-align: center;
+}
+.pie-de-pagina p {
+    padding: 15px;
 }

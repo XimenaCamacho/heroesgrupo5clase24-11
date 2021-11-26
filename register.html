@@ -6,54 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style-registro.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 
 <body>
-    <header>
-        <div class="descuento">
-            <p>20% de descuento en todos los productos!</p>
-        </div>
-        <div class="logo">
-            <a href="./index.html"><img src="./img/logo1.svg" alt="Logo de la tienda"></a>
-            <a href="./index.html"><img src="./img/nombre.svg" alt="Nombre de la tienda"></a>
-        </div>
-    </header>
-    <main class="contenedor-principal">
-        <section class="contenedor-datos">
-            <h1>Registro</h1>
-            <form action="" method="post">
-                <div class="datos">
+    <div class="main-container">
+        <header class="header">
+            <div class="descuento">
+                <p>20% de descuento en todos los productos!</p>
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo1.svg" alt="Logo de la tienda"></a>
+                <a href="./index.html"><img src="./img/nombre.svg" alt="Nombre de la tienda"></a>
+            </div>
+        </header>
+        <main class="contenedor-principal">
+            <section class="contenedor-formulario">
+                <h1>Registro</h1>
+                <form action="" method="post">
                     <input type="text" id="name" name="name" placeholder="Nombre y Apellido">
-                </div>
-                <div class="datos">
                     <input type="email" id="email" name="email" placeholder="Correo electrónico">
-                </div>
-                <div class="datos">
                     <input type="password" id="password" name="password" placeholder="Contraseña">
-                </div>
-                <div class="datos">
                     <select name="country" id="country">
                         <option value="0" selected>País</option>
                         <option value="arg">Argentina</option>
                         <option value="col">Colombia</option>
+                        <option value="chi">Chile</option>
+                        <option value="bra">Brasil</option>
+                        <option value="mex">México</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="per">Perú</option>
                         <option value="ecu">Ecuador</option>
                     </select>
+                    <div class="contenedor-botones">
+                        <button type="reset" class="limpiar">Resetear</button>
+                        <button type="submit" class="enviar">Registrar</button>
+                    </div>
+                </form>
+                <div class="redireccion-formularios">
+                    <p>¿Ya tenés una cuenta?</p>
+                    <a href="">Ingresá</a>
                 </div>
-                <div class="button">
-                    <div class="reset-button"><button type="reset">Resetear</button></div>
-                    <div class="submit-button"><button type="submit">Registrar</button></div>
-                </div>
-            </form>
-            <div>
-                <p>¿Ya tenés una cuenta?</p>
-                <a href="">Ingresá</a>
-            </div>
-        </section>
-    </main>
-    <footer class="pie-de-pagina">
-        <p>Todos los derechos reservados a FRONT END 1</p>
-    </footer>
+            </section>
+        </main>
+        <footer class="pie-de-pagina">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </footer>
+    </div>
 </body>
 
 </html>

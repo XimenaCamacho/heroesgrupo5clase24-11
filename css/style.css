@@ -7,6 +7,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.main-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+}
 .descuento {
     background-color: #1CD1B0;
 }
@@ -37,26 +46,43 @@ body {
     text-decoration: none;
     color: white;
 }
+/* Estilos de cajas main */
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+}
 .boton-mas {
-    width: 50px;
     position: absolute;
-    z-index: 50;
-    top: 50%;
-    left: 85%;
-}
-.boton-mas img {
-    position: fixed;
-    width: 80px;
-}
-.primer-contenedor-heroes {
-    display: flex;
-    width:80%;
-    padding: 5%;
-    justify-content: space-around;
+    top: 40%;
+    left: 90%;
+    background-color: #00669F;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
     margin: auto;
 }
+.boton-mas a {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    margin: auto;
+}
+.boton-mas:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+.primer-contenedor-heroes {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
 .contenedor-heroes {
-    width: 25%;
+    width: 23%;
+    height: 100%;
+    margin: 0px 25px;
     text-align: center;
     position: relative;
 }
@@ -105,9 +131,10 @@ body {
     text-decoration: none;
 }
 .pie-de-pagina {
+    width: 100%;
+    align-self: flex-end;
     background-color: #00669F;
     color: white;
-    bottom: 0;
     text-align: center;
 }
 .pie-de-pagina p {
